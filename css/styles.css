@@ -14,6 +14,7 @@ img {
 .header {
     border-bottom: 1px solid #e7e9fc;
     height: 72px;
+    box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 1px 6px rgba(46, 47, 66, 0.08);
 }
 
 .header .container {
@@ -72,6 +73,23 @@ img {
     color: #404bbf;
 }
 
+.header-ul .list:nth-child(1) .etiket {
+    position: relative;
+    color: #404bbf;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.header-ul .list:nth-child(1) .etiket::after {
+    content: "";
+    width: 100%;
+    position: absolute;
+    left: 0;
+    bottom: -1px;
+    height: 4px;
+    background-color: #404bbf;
+    border-radius: 2px;
+}
+
 .address {
     font-style: normal;
 }
@@ -90,6 +108,7 @@ img {
     letter-spacing: 0.02em;
     line-height: 1.5;
     text-decoration: none;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .address-ul .list .etiket:hover ,
@@ -106,6 +125,9 @@ img {
     background-repeat: no-repeat;
     background-size: cover;
     padding: 188px 0;
+    max-width: 1440px;
+    margin: 0 auto;
+    background-position: center;
 }
 
 
@@ -146,6 +168,8 @@ img {
     min-width: 169px;
     height: 56px;
     border: none;
+
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .hero-button:hover,
@@ -248,6 +272,7 @@ img {
     width: calc((100% - 48px) / 4);
     border-radius: 0 0 4px 4px;
     background-color: #FFFFFF;
+    box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
 }
 
 .card {
@@ -290,6 +315,14 @@ img {
     align-items: center;
     justify-content: center;
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.social-icon-etiket:hover, .social-icon-etiket:focus {
+    background-color: #404bbf;
+}
+
+.our-team-svg {
+    fill: #f4f4fd;
 }
 
 
@@ -424,6 +457,7 @@ img {
     letter-spacing: 0.02em;
     color: #FFFFFF;
     margin-bottom: 16px;
+    margin-bottom: 16px;
 }
 
 .social-media-ul {
@@ -446,5 +480,13 @@ img {
     align-items: center;
     justify-content: center;
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.social-media-ul .social-media-etiket:hover, .social-media-ul .social-media-etiket:focus {
+    background-color: #31d0aa;
+}
+
+.footer-svg {
+    fill: #f4f4fd;
 }
 
