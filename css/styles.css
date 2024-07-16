@@ -453,6 +453,7 @@ img {
     letter-spacing: 0.02em;
     color: #F4F4FD;
     max-width: 264px;
+    margin-bottom: 16px;
 }
 
 .footer-social .footer-social-text {
@@ -462,8 +463,12 @@ img {
     letter-spacing: 0.02em;
     color: #FFFFFF;
     margin-bottom: 16px;
+}
+
+.footer-social p {
     margin-bottom: 16px;
 }
+
 
 .social-media-ul {
     display: flex;
